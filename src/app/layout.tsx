@@ -99,7 +99,4 @@ export default function RootLayout({
           }}
         />
       </body>
-    ```
 
-  )
-}
