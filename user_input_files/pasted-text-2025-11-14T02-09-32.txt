@@ -1,0 +1,499 @@
+cd : Cannot find path 'F:\scada website\scada website\Christian Espinosa - Control System
+Engineer website ver final\portfolio-nextjs\portfolio-nextjs' because it does not exist.
+At line:1 char:1
++ cd portfolio-nextjs
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (F:\scada websit...ortfolio-nextjs:String) [Se
+   t-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+
+up to date in 1s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+> portfolio-nextjs@0.1.0 dev
+> next dev
+
+ ⚠ `images.domains` is deprecated in favor of `images.remotePatterns`. Please update next.config.ts to protect your application from malicious users.
+   ▲ Next.js 16.0.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://169.254.175.253:3000
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+ ✓ Ready in 983ms
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+next/font: warning:
+Failed to download `Poppins` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+Image with src "https://via.placeholder.com/96x96/007BFF/FFFFFF?text=⚡" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 2.6s (compile: 2.1s, render: 582ms)
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+next/font: warning:
+Failed to download `Poppins` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+next/font: warning:
+Failed to download `Poppins` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ GET /sw.js 404 in 526ms (compile: 450ms, render: 75ms)
+ ⚠ Cross origin request detected from devtools to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+next/font: warning:
+Failed to download `Poppins` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ GET / 200 in 152ms (compile: 8ms, render: 144ms)
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+next/font: warning:
+Failed to download `Poppins` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+next/font: warning:
+Failed to download `Poppins` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_c15e96cb.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/inter_c15e96cb.module.css
+    [next]/internal/font/google/inter_c15e96cb.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_29abd68d.module.css
+    [next]/internal/font/google/jetbrains_mono_29abd68d.js
+    ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/poppins_ed9e8a82.module.css
+next/font: warning:
+Failed to download `Poppins` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/poppins_ed9e8a82.module.css
+    [next]/internal/font/google/poppins_ed9e8a82.js
+    ./src/app/layout.tsx
+
+
+ GET /sw.js 404 in 64ms (compile: 9ms, render: 54ms)
+
+

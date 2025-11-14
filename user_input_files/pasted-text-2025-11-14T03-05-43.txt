@@ -1,0 +1,205 @@
+PS F:\scada website\scada website\Christian Espinosa - Control System Engineer website ver 8\portfolio-nextjs> cd "F:\scada website\scada website\Christian Espinosa - Control System Engineer website ver 9"
+PS F:\scada website\scada website\Christian Espinosa - Control System Engineer website ver 9> cd portfolio-nextjs
+>> npm install
+>> npm run dev
+
+added 73 packages, and audited 74 packages in 29s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+3 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> portfolio-nextjs@0.1.0 dev
+> next dev
+
+ ⚠ `images.domains` is deprecated in favor of `images.remotePatterns`. Please update next.config.ts to protect your application from malicious users.
+   ▲ Next.js 16.0.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://169.254.175.253:3000
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+ ✓ Ready in 1779ms
+ GET / 200 in 2.6s (compile: 1876ms, render: 718ms)
+ GET / 200 in 138ms (compile: 5ms, render: 133ms)
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ GET / 200 in 119ms (compile: 3ms, render: 116ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 1077ms (compile: 1019ms, render: 58ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 1077ms (compile: 1019ms, render: 58ms)
+ GET / 200 in 121ms (compile: 4ms, render: 117ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo ENOTFOUND via.placeholder.com
+      at ignore-listed frames {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 52ms (compile: 35ms, render: 17ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 53ms (compile: 35ms, render: 18ms)
+ GET / 200 in 112ms (compile: 4ms, render: 109ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo ENOTFOUND via.placeholder.com
+      at ignore-listed frames {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 42ms (compile: 29ms, render: 13ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 42ms (compile: 29ms, render: 13ms)
+ GET / 200 in 124ms (compile: 5ms, render: 119ms)
+ GET / 200 in 145ms (compile: 3ms, render: 143ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 586ms (compile: 573ms, render: 13ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 586ms (compile: 573ms, render: 13ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=256&q=90 500 in 699ms (compile: 681ms, render: 18ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=256&q=90 500 in 700ms (compile: 681ms, render: 18ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 1418ms (compile: 1401ms, render: 17ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 1418ms (compile: 1401ms, render: 17ms)
+ GET / 200 in 137ms (compile: 4ms, render: 133ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 918ms (compile: 905ms, render: 12ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 918ms (compile: 905ms, render: 13ms)
+ GET / 200 in 124ms (compile: 4ms, render: 120ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo ENOTFOUND via.placeholder.com
+      at ignore-listed frames {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 42ms (compile: 25ms, render: 17ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 42ms (compile: 25ms, render: 18ms)
+ GET / 200 in 123ms (compile: 2ms, render: 121ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo ENOTFOUND via.placeholder.com
+      at ignore-listed frames {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 103ms (compile: 82ms, render: 21ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 103ms (compile: 82ms, render: 22ms)
+ GET / 200 in 121ms (compile: 2ms, render: 119ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo ENOTFOUND via.placeholder.com
+      at ignore-listed frames {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 51ms (compile: 36ms, render: 15ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 51ms (compile: 36ms, render: 15ms)
+ GET / 200 in 133ms (compile: 4ms, render: 129ms)
+TypeError: fetch failed
+    at ignore-listed frames {
+  [cause]: Error: getaddrinfo EAI_AGAIN via.placeholder.com
+      at ignore-listed frames {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'via.placeholder.com'
+  }
+}
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 1427ms (compile: 1416ms, render: 11ms)
+ GET /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F96x96%2F007BFF%2FFFFFFF%3Ftext%3D%E2%9A%A1&w=640&q=90 500 in 1427ms (compile: 1416ms, render: 12ms)
+
