@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
@@ -51,74 +54,52 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-      <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#007BFF" />
-  </head>
-  <body className="bg-background-page text-text-primary font-body antialiased">
-    <div id="root">
-      {children}
-    </div>
-    
-    {/* NoScript fallback for accessibility */}
-    <noscript>
-      <title>Christian Espinosa - Automation Engineer</title>
-    </noscript>
-    
-    {/* Custom cursor and loading scripts */}
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `
-          // Custom cursor functionality
-          (function() {
-            const cursor = document.createElement('div');
-            cursor.className = 'custom-cursor';
-            document.body.appendChild(cursor);
-            
-            document.addEventListener('mousemove', (e) => {
-              cursor.style.left = e.clientX + 'px';
-              cursor.style.top = e.clientY + 'px';
-            });
-            
-            // Cursor hover effects
-            const hoverElements = document.querySelectorAll('a, button, [role="button"]');
-            hoverElements.forEach(el => {
-              el.addEventListener('mouseenter', () => cursor.classList.add('custom-cursor-hover'));
-              el.addEventListener('mouseleave', () => cursor.classList.remove('custom-cursor-hover'));
-            });
-          })();
-          
-          // Lazy load main script
-          window.addEventListener('DOMContentLoaded', () => {
-            const mainScript = document.createElement('script');
-            mainScript.src = '/js/script-min.js';
-            mainScript.defer = true;
-            document.head.appendChild(mainScript);
-          });
-        `
-      }}
-    />
-  </body>
-```
-)
+    <html lang="en">
+      <body className="bg-background-page text-text-primary font-body antialiased">
+        <div id="root">
+          {children}
+        </div>
+        
+        {/* NoScript fallback for accessibility */}
+        <noscript>
+          <title>Christian Espinosa - Automation Engineer</title>
+        </noscript>
+        
+        {/* Custom cursor and loading scripts */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Custom cursor functionality
+              (function() {
+                const cursor = document.createElement('div');
+                cursor.className = 'custom-cursor';
+                document.body.appendChild(cursor);
+                
+                document.addEventListener('mousemove', (e) => {
+                  cursor.style.left = e.clientX + 'px';
+                  cursor.style.top = e.clientY + 'px';
+                });
+                
+                // Cursor hover effects
+                const hoverElements = document.querySelectorAll('a, button, [role="button"]');
+                hoverElements.forEach(el => {
+                  el.addEventListener('mouseenter', () => cursor.classList.add('custom-cursor-hover'));
+                  el.addEventListener('mouseleave', () => cursor.classList.remove('custom-cursor-hover'));
+                });
+              })();
+              
+              // Lazy load main script
+              window.addEventListener('DOMContentLoaded', () => {
+                const mainScript = document.createElement('script');
+                mainScript.src = '/js/script-min.js';
+                mainScript.defer = true;
+                document.head.appendChild(mainScript);
+              });
+            `
+          }}
+        />
+      </body>
+    ```
 
+  )
 }
-
-## Fix 3: Ensure All Files Are Present
-
-Make sure you have these files in your GitHub repository:
-
-**Root level:**
-- `tailwind.config.js` 
-- `postcss.config.js` (updated with `@tailwindcss/postcss`)
-
-**In `src/app/`:**
-- `layout.tsx` (restored)
-- `globals.css` (updated with proper Tailwind imports)
-- `page.tsx`
-
-**In `src/components/`:**
-- `OptimizedImage.tsx`
-- All other component files
-
-After making these changes, Vercel should be able to build successfully with proper Tailwind CSS v4 support, and your website will finally have the beautiful, readable design we've been working toward!
