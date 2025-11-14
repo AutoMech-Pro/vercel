@@ -59,7 +59,6 @@ export default function RootLayout({
       </head>
       <body 
         className="bg-background-page text-text-primary font-body antialiased"
-        style={{ background: '#0A0A0A', color: '#E4E4E7' }}
       >
         <div id="root">
           {children}
