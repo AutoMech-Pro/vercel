@@ -54,50 +54,51 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <html lang="en">
       <body className="bg-background-page text-text-primary font-body antialiased">
-    <div id="root">
-      {children}
-    </div>
-    
-    {/* NoScript fallback for accessibility */}
-    <noscript>
-      <title>Christian Espinosa - Automation Engineer</title>
-    </noscript>
-    
-    {/* Custom cursor and loading scripts */}
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `
-          // Custom cursor functionality
-          (function() {
-            const cursor = document.createElement('div');
-            cursor.className = 'custom-cursor';
-            document.body.appendChild(cursor);
-            
-            document.addEventListener('mousemove', (e) => {
-              cursor.style.left = e.clientX + 'px';
-              cursor.style.top = e.clientY + 'px';
-            });
-            
-            // Cursor hover effects
-            const hoverElements = document.querySelectorAll('a, button, [role="button"]');
-            hoverElements.forEach(el => {
-              el.addEventListener('mouseenter', () => cursor.classList.add('custom-cursor-hover'));
-              el.addEventListener('mouseleave', () => cursor.classList.remove('custom-cursor-hover'));
-            });
-          })();
-          
-          // Lazy load main script
-          window.addEventListener('DOMContentLoaded', () => {
-            const mainScript = document.createElement('script');
-            mainScript.src = '/js/script-min.js';
-            mainScript.defer = true;
-            document.head.appendChild(mainScript);
-          });
-        `
-      }}
-    />
-  </body>
-)
-
+        <div id="root">
+          {children}
+        </div>
+        
+        {/* NoScript fallback for accessibility */}
+        <noscript>
+          <title>Christian Espinosa - Automation Engineer</title>
+        </noscript>
+        
+        {/* Custom cursor and loading scripts */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Custom cursor functionality
+              (function() {
+                const cursor = document.createElement('div');
+                cursor.className = 'custom-cursor';
+                document.body.appendChild(cursor);
+                
+                document.addEventListener('mousemove', (e) => {
+                  cursor.style.left = e.clientX + 'px';
+                  cursor.style.top = e.clientY + 'px';
+                });
+                
+                // Cursor hover effects
+                const hoverElements = document.querySelectorAll('a, button, [role="button"]');
+                hoverElements.forEach(el => {
+                  el.addEventListener('mouseenter', () => cursor.classList.add('custom-cursor-hover'));
+                  el.addEventListener('mouseleave', () => cursor.classList.remove('custom-cursor-hover'));
+                });
+              })();
+              
+              // Lazy load main script
+              window.addEventListener('DOMContentLoaded', () => {
+                const mainScript = document.createElement('script');
+                mainScript.src = '/js/script-min.js';
+                mainScript.defer = true;
+                document.head.appendChild(mainScript);
+              });
+            `
+          }}
+        />
+      </body>
+    </html>
+  )
 }
