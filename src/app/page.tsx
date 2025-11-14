@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation'
 import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
@@ -6,7 +5,7 @@ import ServicesSection from '@/components/ServicesSection'
 import PortfolioSection from '@/components/PortfolioSection'
 import ExperienceSection from '@/components/ExperienceSection'
 import SkillsSection from '@/components/SkillsSection'
-// import TechnicalSection from '@/components/TechnicalSection'  // TEMPORARILY DISABLED
+import TechnicalSection from '@/components/TechnicalSection'
 import ContactSection from '@/components/ContactSection'
 import InteractiveDashboard from '@/components/InteractiveDashboard'
 
@@ -21,10 +20,10 @@ export default function Home() {
         <PortfolioSection />
         <ExperienceSection />
         <SkillsSection />
-        {/* <TechnicalSection /> */}  {/* TEMPORARILY DISABLED */}
+        <TechnicalSection />
         <ContactSection />
         <InteractiveDashboard />
-
+      </main>
     </>
   )
 }
