@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* System Fonts Integration - No external font dependencies */
 @layer base {
@@ -29,23 +31,57 @@
     @apply border-border;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
     font-family: var(--font-inter);
     background: var(--background-page);
     color: var(--text-primary);
     line-height: 1.6;
-    scroll-behavior: smooth;
-    font-size: 16px !important; /* Force readable font size */
+    font-size: 1rem; /* 16px base */
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-poppins);
     font-weight: 600;
     line-height: 1.2;
+    color: var(--text-primary);
+  }
+  
+  h1 {
+    font-size: 3rem; /* 48px */
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25rem; /* 36px */
+  }
+  
+  h3 {
+    font-size: 1.875rem; /* 30px */
+  }
+  
+  p {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.6;
+    color: var(--text-primary);
   }
   
   code, pre {
     font-family: var(--font-jetbrains);
+    font-size: 1rem; /* 16px */
+    line-height: 1.5;
+  }
+  
+  /* Ensure minimum readable sizes for all text */
+  span, div, li, a, button {
+    font-size: 1rem !important; /* 16px minimum */
+    color: var(--text-primary);
   }
 }
 
@@ -365,53 +401,73 @@
   }
 }
 
-/* Force content visibility - Ultimate fix */
+/* Force content visibility and readability - Ultimate fix */
 * {
   opacity: 1 !important;
   visibility: visible !important;
   animation-play-state: running !important;
 }
 
+html, body {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ensure all sections are visible */
 section, section > * {
   opacity: 1 !important;
   visibility: visible !important;
   transform: none !important;
+  display: block !important;
 }
 
-/* Ensure all text content is visible and readable */
-p, div, span, li, a, button {
+/* Force readable text sizes and colors */
+p, div, span, li, a, button, h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary) !important;
-  font-size: 16px !important;
+  font-size: inherit !important;
   line-height: 1.6 !important;
-  opacity: 1 !important;
-}
-
-.max-w-7xl, .text-center, .hero-gradient > * {
   opacity: 1 !important;
   visibility: visible !important;
 }
 
+/* Specific component fixes */
+.max-w-7xl, .container, .text-center {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hero-gradient > * {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Home section specific fixes */
 #home, #home > * {
   opacity: 1 !important;
   visibility: visible !important;
   transform: none !important;
+  display: block !important;
 }
 
-#home h1, #home p, #home .flex {
+#home h1, #home p, #home .flex, #home div {
   opacity: 1 !important;
   visibility: visible !important;
   transform: none !important;
 }
 
+/* Technical/code section fixes */
 #technical pre {
   background: rgba(45, 45, 45, 0.95) !important;
   opacity: 1 !important;
   visibility: visible !important;
+  color: #ffffff !important;
+  font-size: 1rem !important;
 }
 
 #technical pre code {
   color: #ffffff !important;
   background: transparent !important;
+  font-size: inherit !important;
 }
 
 /* Remove any hiding effects */
@@ -419,4 +475,17 @@ p, div, span, li, a, button {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
+}
+
+/* Ensure navigation and buttons are visible */
+nav, nav * {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Force main content areas to be visible */
+main, main > * {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
 }
