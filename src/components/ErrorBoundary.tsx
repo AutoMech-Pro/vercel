@@ -1,69 +1,45 @@
 'use client'
 
-import React, { Component, ErrorInfo, ReactNode } from 'react'
+import React, { Component, ReactNode } from 'react'
 
 interface Props {
   children: ReactNode
   fallback?: ReactNode
-  componentName?: string
 }
 
 interface State {
   hasError: boolean
   error?: Error
-  errorInfo?: ErrorInfo
 }
 
-class ErrorBoundary extends Component<Props, State> {
-  public state: State = {
-    hasError: false
+export default class ErrorBoundary extends Component<Props, State> {
+  constructor(props: Props) {
+    super(props)
+    this.state = { hasError: false }
   }
 
-  public static getDerivedStateFromError(error: Error): State {
+  static getDerivedStateFromError(error: Error): State {
     return { hasError: true, error }
   }
 
-  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+  componentDidCatch(error: Error, errorInfo: any) {
     console.error('ErrorBoundary caught an error:', error, errorInfo)
-    this.setState({ error, errorInfo })
   }
 
-  public render() {
+  render() {
     if (this.state.hasError) {
-      const { fallback, componentName = 'Component' } = this.props
-
-      if (fallback) {
-        return fallback
-      }
-
-      return (
-        <div className="glass-card rounded-2xl p-8 text-center">
-          <div className="text-red-400 text-6xl mb-4">⚠️</div>
-          <h3 className="text-xl font-bold text-text-primary mb-4">
-            {componentName} Error
-          </h3>
-          <p className="text-text-secondary mb-4">
-            An error occurred while rendering this component. This might be due to canvas initialization issues or WebGL support.
+      return this.props.fallback || (
+        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
+          <h3 className="text-red-400 font-semibold mb-2">Error Loading Component</h3>
+          <p className="text-red-300 text-sm">
+            Something went wrong loading this component. Please refresh the page.
           </p>
           <button
-            onClick={() => {
-              this.setState({ hasError: false, error: undefined, errorInfo: undefined })
-            }}
-            className="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300"
+            onClick={() => window.location.reload()}
+            className="mt-2 px-3 py-1 bg-red-500 text-white rounded text-sm hover:bg-red-600 transition-colors"
           >
-            Try Again
+            Reload Page
           </button>
-          {process.env.NODE_ENV === 'development' && this.state.error && (
-            <details className="mt-4 text-left">
-              <summary className="cursor-pointer text-text-secondary text-sm mb-2">
-                Error Details (Development)
-              </summary>
-              <pre className="text-xs bg-background-surface p-2 rounded text-red-300 overflow-auto max-h-40">
-                {this.state.error.toString()}
-                {this.state.errorInfo?.componentStack}
-              </pre>
-            </details>
-          )}
         </div>
       )
     }
@@ -71,5 +47,3 @@ class ErrorBoundary extends Component<Props, State> {
     return this.props.children
   }
 }
-
-export default ErrorBoundary
